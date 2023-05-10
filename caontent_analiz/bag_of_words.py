@@ -45,16 +45,16 @@ buffer  = add_zero(seq_sample, sqe)
 sample_vector = buffer[0]
 real_vector = buffer[1]
 
-print(len(sample_vector))
-print()
-print(len(real_vector))
-
-
-
-
-print(spatial.distance.cosine(real_vector, sample_vector))
-print(F.cosine_similarity(torch.FloatTensor(sample_vector), torch.FloatTensor(real_vector), dim=0))
+# print(len(sample_vector))
+# print()
+# print(len(real_vector))
 #
+#
+#
+#
+# print(spatial.distance.cosine(real_vector, sample_vector))
+# print(F.cosine_similarity(torch.FloatTensor(sample_vector), torch.FloatTensor(real_vector), dim=0))
+# #
 # sns.histplot(data=np.array(sqe))
 # sns.histplot(data=np.array(seq_sample))
 # plt.show()

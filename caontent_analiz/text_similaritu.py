@@ -1,6 +1,6 @@
 from lemma.lemma import get_lemma
 import difflib
-from bag_of_words import sqe, seq_sample
+from bag_of_words import  sample_vector, real_vector
 
 
 
@@ -16,4 +16,4 @@ sample = get_lemma(path_sample)
 real = get_lemma(path)
 
 print(similarity(real, sample))
-print(similarity(sqe, seq_sample))
+print(similarity(sample_vector, real_vector))
