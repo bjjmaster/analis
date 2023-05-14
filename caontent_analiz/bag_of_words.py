@@ -1,12 +1,7 @@
 from lemma.lemma import get_lemma
 from collections import Counter
 import numpy as np
-import matplotlib
-import matplotlib.pyplot as plt
-import seaborn as sns
-from scipy import spatial
-import torch
-import torch.nn.functional as F
+
 
 
 def add_zero(list1, list2):
@@ -45,9 +40,9 @@ buffer  = add_zero(seq_sample, sqe)
 sample_vector = buffer[0]
 real_vector = buffer[1]
 
-# print(len(sample_vector))
-# print()
-# print(len(real_vector))
+print(len(sample_vector))
+print(real_vector)
+print(len(real_vector))
 #
 #
 #
