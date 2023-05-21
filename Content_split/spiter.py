@@ -42,3 +42,6 @@ def splitter_sample(path):
     return digital_dict_content_split, digital_dict_content
 
 
+z = splitter_sample('C:\\Users\\max\\PycharmProjects\\analis\\doc_analizator\\politics\\sample.docx')[1]
+for i in z:
+    print(i, z[i])

@@ -21,7 +21,7 @@ def CNN(x, y): # mx - это длиннаа сообщения
     model_cnn.compile(optimizer="adam",
                       loss='binary_crossentropy',
                       metrics=['accuracy'])
-    model_cnn_fit = model_cnn.fit(x,y, epochs=5, batch_size=128, validation_split=0.2)
+    model_cnn_fit = model_cnn.fit(x,y, epochs=9, batch_size=128, validation_split=0.3)
 
     print()
 
@@ -50,9 +50,9 @@ def LSTM(x, y):
 
     history = model_LSTM.fit(x,
                         y,
-                        epochs=5,
+                        epochs=9,
                         batch_size=128,
-                        validation_split=0.2)
+                        validation_split=0.3)
 
     print()
     plt.plot(history.history['accuracy'],
@@ -79,9 +79,9 @@ def GRU(x, y):
 
     history = model_GRU.fit(x,
                              y,
-                             epochs=5,
+                             epochs=9,
                              batch_size=128,
-                             validation_split=0.2)
+                             validation_split=0.3)
 
     print()
 
