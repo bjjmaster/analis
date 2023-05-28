@@ -40,6 +40,7 @@ def LSTM(x, y):
     print("LSTM")
     model_LSTM = kf.Sequential()
     model_LSTM.add(net.Embedding(num_words, 64, input_length=max_review_len))
+    model_LSTM.add(net.Conv1D(250, 5, padding="valid", activation="relu"))
     model_LSTM.add(net.LSTM(128))
     model_LSTM.add(net.Dense(1, activation="sigmoid"))
 
